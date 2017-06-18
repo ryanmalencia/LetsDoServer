@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using DataTypes;
+using System.Data.Entity;
 
 namespace LetsDoServer.DataAccessLayer
 {
@@ -8,6 +9,8 @@ namespace LetsDoServer.DataAccessLayer
         {
 
         }
+
+        public DbSet<Data> Datas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
